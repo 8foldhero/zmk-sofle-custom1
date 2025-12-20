@@ -37,15 +37,6 @@
         tap-ms = <100>;
     };
 
-    backspace_layer: backspace_layer {
-        compatible = "zmk,behavior-hold-tap";
-        label = "BACKSPACE_LAYER";
-        #binding-cells = <2>;
-        hold-trigger-key-positions = <60>;
-        tapping-term-ms = <150>;
-        bindings = <&tog>, <&trans>;
-    };
-
     behaviors {
     };
 
@@ -68,11 +59,11 @@
 
         COLEMARK {
             bindings = <
-&kp ESC     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7  &kp N8     &kp N9           &kp N0         &kp BACKSPACE
-&kp TAB     &kp Q      &kp W         &kp F         &kp P   &kp B        &kp DOWN_ARROW   &kp J      &kp L   &kp U      &kp Y            &kp SEMICOLON  &kp MINUS
-&kp CAPS    &kp A      &kp R         &kp S         &kp T   &kp G        &kp LEFT_ARROW   &kp M      &kp N   &kp E      &kp I            &kp O          &kp APOS
-&kp LSHFT   &kp X      &kp C         &kp D         &kp V   &kp Z        &kp RIGHT_ARROW  &kp K      &kp H   &kp COMMA  &kp DOT          &kp FSLH       &kp ENTER
-&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &tog 3  &kp SPACE    &kp ENTER        &kp SPACE  &tog 1  &mo 2      &kp RIGHT_SHIFT  &kp DELETE
+&kp ESC     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7         &kp N8     &kp N9           &kp N0         &kp BACKSPACE
+&kp TAB     &kp Q      &kp W         &kp F         &kp P   &kp B        &kp DOWN_ARROW   &kp J      &kp L          &kp U      &kp Y            &kp SEMICOLON  &kp MINUS
+&kp CAPS    &kp A      &kp R         &kp S         &kp T   &kp G        &kp LEFT_ARROW   &kp M      &kp N          &kp E      &kp I            &kp O          &kp APOS
+&kp LSHFT   &kp X      &kp C         &kp D         &kp V   &kp Z        &kp RIGHT_ARROW  &kp K      &kp H          &kp COMMA  &kp DOT          &kp FSLH       &kp ENTER
+&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &tog 3  &kp SPACE    &kp ENTER        &kp SPACE  &kp BACKSPACE  &tog 1     &kp RIGHT_SHIFT  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
