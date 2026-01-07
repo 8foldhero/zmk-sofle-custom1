@@ -62,7 +62,7 @@ layers:
   - {t: FUNCTION, h: toggle}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: COLEMARK, h: toggle}
+  - {t: FUNCTION, h: toggle}
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   NUMPAD:
@@ -187,7 +187,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - {t: QWERTY, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - {t: QWERTY, h: toggle}
   - $$mdi:keyboard-space$$
